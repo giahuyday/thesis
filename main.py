@@ -1,4 +1,4 @@
-from methods.water_mark import makeWatermark, makepdf
+from methods.water_mark import makeWatermark, makepdf, water_mark_use_img
 import sys
 
 water_mark_infor = sys.argv[1]
@@ -8,4 +8,5 @@ print(water_mark_infor)
 print(pdf_file)
 
 makeWatermark(water_mark_infor)
-makepdf(pdf_file)
+water_mark_use_img('./methods/bg.jpg', 'new.pdf')
+makepdf(pdf_file, '1231312312312')
