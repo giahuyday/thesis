@@ -4,7 +4,6 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from PyPDF2 import PdfWriter, PdfReader
 
-
 def read_trailer(file):
     merged = "addTokenToTrailer.pdf"
     with open(file, "rb") as input_file:
